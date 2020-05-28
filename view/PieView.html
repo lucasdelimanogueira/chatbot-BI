@@ -1,0 +1,18 @@
+<div id="myDiv" style="margin: 0 auto; height: 60vh; min-height: 300px; width: 50%;">
+	<!-- Plotly chart will be drawn inside this DIV -->	
+</div>
+
+<script>
+  	var data = [{
+      values: <?php echo $data2; ?>,
+      labels: <?php echo $data1; ?>,
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 400,
+      width: 500
+    };
+
+  Plotly.newPlot('myDiv', data, layout);
+</script>
