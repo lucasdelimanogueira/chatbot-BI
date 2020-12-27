@@ -12,7 +12,7 @@ class LUISModel{
 	public function __construct($querystr){
 		$query = $_POST['query'];
 
-		$url = "INSERIR SUA URL DO LUIS CHATBOT AQUI";
+		$url = "INSERIR SUA URL_KEY DO LUIS CHATBOT AQUI";
 		
 		$url = str_replace(" ", "%20", $url);
 
